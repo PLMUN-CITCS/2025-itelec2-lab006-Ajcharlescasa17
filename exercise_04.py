@@ -1,31 +1,39 @@
-import math
+# Your Name
+# ITELEC2
+# Laboratory #06 – Utilizing Basic Math Libraries in Python
 
-# Calculate the square root
+import math  # Import the math module
+
+# 1️⃣ Calculate the square root of 16
 number = 16
 sqrt_result = math.sqrt(number)
 
-# Get the value of pi
+# 2️⃣ Get the value of π (pi)
 pi_value = math.pi
 
-# Convert degrees to radians and calculate trigonometric functions
-angle_30_degrees = 30
-angle_60_degrees = 60
-angle_45_degrees = 45
+# 3️⃣ Calculate the sine of 30 degrees (converted to radians)
+angle_degrees = 30
+angle_radians = math.radians(angle_degrees)
+sin_result = math.sin(angle_radians)
 
-angle_30_radians = math.radians(angle_30_degrees)
-angle_60_radians = math.radians(angle_60_degrees)
-angle_45_radians = math.radians(angle_45_degrees)
+# 4️⃣ Calculate the cosine of 60 degrees (converted to radians)
+angle_degrees_cos = 60
+angle_radians_cos = math.radians(angle_degrees_cos)
+cos_result = math.cos(angle_radians_cos)
 
-sin_result = math.sin(angle_30_radians)
-cos_result = math.cos(angle_60_radians)
-tan_result = math.tan(angle_45_radians)
+# 5️⃣ Calculate the tangent of 45 degrees (converted to radians)
+angle_degrees_tan = 45
+angle_radians_tan = math.radians(angle_degrees_tan)
+tan_result = math.tan(angle_radians_tan)
 
-# Calculate exponential and logarithms
+# 6️⃣ Calculate exponential of 2 (e^2)
 exp_result = math.exp(2)
+
+# 7️⃣ Calculate logarithms
 log_result = math.log(10)  # Natural log (base e)
 log10_result = math.log(100, 10)  # Log base 10
 
-# Display results
+# 8️⃣ Print the results
 print("Square root of", number, "is:", sqrt_result)
 print("Value of pi is:", pi_value)
 print("Sine of 30 degrees (in radians) is:", sin_result)
