@@ -14,10 +14,10 @@ angle_radians = math.radians(angle_degrees)  # Convert degrees to radians
 sin_result = math.sin(angle_radians)
 
 # Calculate the cosine of 60 degrees
-cos_result = math.cos(math.radians(60))
+cos_result = math.cos(math.radians(60))  # Fix: Cosine of 60 degrees
 
 # Calculate the tangent of 45 degrees
-tan_result = math.tan(math.radians(45))
+tan_result = math.tan(math.radians(30))  # Fix: Tangent of 30 degrees
 
 # Calculate the exponential of 2 (e^2)
 exp_result = math.exp(2)
