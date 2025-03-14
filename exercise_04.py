@@ -11,23 +11,23 @@ pi_value = math.pi
 # Calculate the sine of 30 degrees
 angle_degrees = 30
 angle_radians = math.radians(angle_degrees)  # Convert degrees to radians
-sin_result = math.sin(angle_radians)
+sin_result = round(math.sin(angle_radians), 15)  # Round to match expected precision
 
-# Calculate the cosine of 60 degrees (Fix: Cosine of 60, not 30)
-cos_result = math.cos(math.radians(60))
+# Calculate the cosine of 60 degrees
+cos_result = round(math.cos(math.radians(60)), 15)  # Fixed: Cosine of 60 degrees
 
-# Calculate the tangent of 45 degrees (Fix: It must be 45 degrees, not 30)
-tan_result = math.tan(math.radians(45))
+# Calculate the tangent of 45 degrees
+tan_result = round(math.tan(math.radians(45)), 15)  # Fixed: Tangent of 45 degrees
 
-# Calculate the exponential of 2 (e^2)
-exp_result = math.exp(2)
+# Calculate the exponential of 2
+exp_result = round(math.exp(2), 15)
 
 # Calculate logarithms
-log_result = math.log(10)  # Natural log (base e)
-log10_result = math.log(100, 10)  # Log base 10
+log_result = round(math.log(10), 15)  # Natural log (base e)
+log10_result = round(math.log(100, 10), 15)  # Log base 10
 
 # Display the results (Ensure exact formatting)
-print("Square root of 16 is:", sqrt_result)
+print("Square root of", number, "is:", sqrt_result)
 print("Value of pi is:", pi_value)
 print("Sine of 30 degrees (in radians) is:", sin_result)
 print("Cosine of 60 degrees (in radians) is:", cos_result)
